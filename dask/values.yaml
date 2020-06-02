@@ -66,13 +66,13 @@ worker:
   ## https://docs.dask.org/en/latest/configuration.html#environment-variables
   ## https://distributed.dask.org/en/latest/worker.html#memory-management
   #  - name: DASK_DISTRIBUTED__WORKER__MEMORY__TARGET
-  #    value: 0.60
+  #    value: "0.60"
   #  - name: DASK_DISTRIBUTED__WORKER__MEMORY__SPILL
-  #    value: 0.70
+  #    value: "0.70"
   #  - name: DASK_DISTRIBUTED__WORKER__MEMORY__PAUSE
-  #    value: 0.80
+  #    value: "0.80"
   #  - name: DASK_DISTRIBUTED__WORKER__MEMORY__TERMINATE
-  #    value: 0.95
+  #    value: "0.95"
   resources: {}
   #  limits:
   #    cpu: 1
