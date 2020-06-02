@@ -75,6 +75,7 @@ worker:
   nodeSelector: {}
   affinity: {}
   securityContext: {}
+  nanny: True # whether to enable the dask "nanny process" which kills workers close to the memory limit
   # serviceAccountName: ""
   # port: ""
   #  this option overrides "--nthreads" on workers, which defaults to resources.limits.cpu / default_resources.limits.cpu

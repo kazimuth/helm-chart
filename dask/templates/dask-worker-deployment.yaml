@@ -44,6 +44,10 @@ spec:
             - --worker-port
             - {{ .Values.worker.port | quote }}
           {{- end }}
+          {{- if not .Values.worker.nanny }}
+            - --no-nanny
+          {{- end }}
+
           ports:
             - containerPort: 8789
           resources:
